@@ -5,6 +5,21 @@ log.js is a log layer on top of console.* API.
 It aims to provide more flexibility, more informations and more readability, to the
 usual console.* API.
 
+
+# How to use it
+Let look at the following code from examples/basic.js
+
+    function bar(){
+        logjs.log("foo");	
+    }
+    bar();
+
+It will output
+
+    $ node examples/basic.js 
+    [9:09.839] basic.js:5:bar(): foo
+
+
 # TODO
 * implement colors to make things more readable
   * possible with tty on node (see https://github.com/jeromeetienne/nmod/blob/master/nmod#L204)

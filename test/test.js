@@ -1,4 +1,6 @@
-var logjs	= logjs	|| require('../lib/logjs.js');
+// commonjs import
+var logjs	= logjs	|| require('../lib/logjs');
+
 //console	= logjs;
 
 function slota2(){

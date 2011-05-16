@@ -3,5 +3,8 @@
 
 * backward compatible with console.*
   * so you can use do "console = logjs;" in your code to use logjs immediatly
+
+    console	= logjs;
+    console.log("usual", "things", "foobar");
   
 
