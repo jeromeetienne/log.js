@@ -1,12 +1,14 @@
-var logjs	= require('../lib/logjs.js');
+var logjs	= logjs	|| require('../lib/logjs.js');
+//console	= logjs;
 
 function slota2(){
 	//logjs.dir(stacktraceGenerate());
 	//logjs.log("enter", 1+2, slota2);
-	logjs.log("bonjour")	
+	//logjs.log("bonjour")
+	logjs.assert(false, "no good")
 	//logjs.assert(false);
 }
-slota2	= logjs.wrapFunction(slota2);
+//slota2	= logjs.wrapFunction(slota2);
 function slota3(){	slota2();	}
 slota3();
 
