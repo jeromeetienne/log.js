@@ -1,5 +1,7 @@
 # log.js - a log layer on top of console.* API
 
+(early work)
+
 log.js is a log layer on top of console.* API.
 
 It aims to provide more flexibility, more informations and more readability, to the
