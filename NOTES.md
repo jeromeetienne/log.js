@@ -6,5 +6,10 @@
 
     console	= logjs;
     console.log("usual", "things", "foobar");
-  
+
+* hijacking this file to note about vendorjs framework
+  * ineheritance from mrdoob code
+  * plugin from threex
+  * mixin module : microevent
+  * Each being a blog post
 
