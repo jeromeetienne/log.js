@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<title>Test threads fibonacci</title>
+	<body>
+		<div id="result"></div>
+
+		<!-- this is a good toy "consoleWorker.js makes console.* API availble in WebWorker" -->
+		<!-- parisjs -->
+
+		<script src="../vendor/microevent.js"></script>
+
+		<script src="./consoleWorkerPage.js"></script>
+		<script src="../lib/socketioServer.js"></script>
+		<script src="../lib/socketioClient.js"></script>
+
+		<script language="javascript">
+			var socketioWorker = new Worker("main_server.js");
+			consoleWorker.bind(socketioWorker);
+		</script>
+
+		<script src="./main_client.js"></script>
+	</body>
+</html>
